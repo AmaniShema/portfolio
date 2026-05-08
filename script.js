@@ -106,30 +106,53 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
 
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const btn = form.querySelector('button[type="submit"]');
       const original = btn.textContent;
+      const name = form.querySelector('#name').value.trim();
+      const email = form.querySelector('#email').value.trim();
+      const message = form.querySelector('#message').value.trim();
 
-      // Show sending state
+      if (!name || !email || !message) {
+        alert('Please complete all fields before sending.');
+        return;
+      }
+
       btn.textContent = 'Sending...';
       btn.disabled = true;
       btn.style.opacity = '0.7';
 
-      // Simulate async (replace with real API call later)
-      setTimeout(() => {
+      try {
+        const response = await fetch('/api/send-email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, message }),
+        });
+
+        if (!response.ok) {
+          throw new Error('Send failed');
+        }
+
         btn.textContent = '✓ Message Sent!';
         btn.style.background = '#22c55e';
         btn.style.opacity = '1';
         form.reset();
+      } catch (error) {
+        console.error('Contact form error:', error);
+        btn.textContent = 'Send Message →';
+        btn.disabled = false;
+        btn.style.opacity = '1';
+        alert('Sorry, your message could not be sent. Please try again later.');
+        return;
+      }
 
-        setTimeout(() => {
-          btn.textContent = original;
-          btn.disabled = false;
-          btn.style.background = '';
-        }, 3000);
-      }, 1400);
+      setTimeout(() => {
+        btn.textContent = original;
+        btn.disabled = false;
+        btn.style.background = '';
+      }, 3000);
     });
   }
 
