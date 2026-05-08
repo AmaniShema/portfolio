@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amani Shema — Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Amani Shema</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="cv/Amani_Shema_CV (1).pdf" download="Amani_Shema_CV.pdf" class="btn-resume">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════ HERO ════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Decorative background elements -->
+    <div class="hero-grid"></div>
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="hero-orb hero-orb--3"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        <span>Kigali, Rwanda</span>
+      </div>
+      <h1 class="hero-name reveal reveal--delay-1">Amani Shema</h1>
+      <p class="hero-title reveal reveal--delay-2">Full-Stack Developer</p>
+      <p class="hero-desc reveal reveal--delay-3">
+        Need code that works and looks good? I build clean,<br class="desktop-br" />
+        responsive web applications using JavaScript, Java, and Spring Boot.
+      </p>
+      <div class="hero-cta reveal reveal--delay-4">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact" class="btn btn--outline">Contact Me</a>
+      </div>
+    </div>
+
+    <!-- Animated code snippet accent -->
+    <div class="hero-code reveal reveal--delay-4">
+      <div class="code-bar">
+        <span class="dot dot--red"></span>
+        <span class="dot dot--yellow"></span>
+        <span class="dot dot--green"></span>
+      </div>
+      <pre class="code-text"><span class="c-kw">public class</span> <span class="c-var">Amani</span> {
+  <span class="c-kw">String</span> <span class="c-key">role</span> = <span class="c-str">"Full-Stack Dev"</span>;
+  <span class="c-kw">String</span>[] <span class="c-key">stack</span> = {
+    <span class="c-str">"Java"</span>, <span class="c-str">"Spring Boot"</span>,
+    <span class="c-str">"JavaScript"</span>, <span class="c-str">"SQL"</span>
+  };
+  <span class="c-kw">String</span> <span class="c-key">location</span> = <span class="c-str">"Kigali 🇷🇼"</span>;
+  <span class="c-kw">boolean</span> <span class="c-key">openToWork</span> = <span class="c-cyan">true</span>;
+}</pre>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-card glass-card reveal">
+        <div class="about-avatar">
+          <div class="avatar-ring">
+            <img src="images/IMG_20250827_163516_062.webp" alt="Amani Shema" class="avatar-photo" />
+          </div>
+          <div class="avatar-badge">
+            <span class="status-dot"></span>
+            <span>Available</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-label">System Overview</div>
+          <h2 class="section-heading">About Me</h2>
+          <p>
+            I’m a Full-Stack Developer based in Kigali, Rwanda, currently pursuing
+             a Software Engineering degree at AUCA. My background in logistics and 
+             field service management taught me the importance of efficient systems, problem-solving, 
+             and clear communication skills I now bring into software development.
+          </p>
+          <p>
+          I enjoy building clean, responsive, and reliable web applications using JavaScript, 
+          Java, and Spring Boot. Whether working on frontend interfaces or backend architecture, 
+          I focus on creating solutions that are practical, scalable, and designed with real users in mind.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Core Languages</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ SKILLS ══════════════════════════════ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Technical Stack</div>
+        <h2 class="section-heading">What I Work With</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+          </div>
+          <span class="skill-name">HTML5 / CSS3</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+          </div>
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.19-7.627M9.734 23.924c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639"/></svg>
+          </div>
+          <span class="skill-name">Java</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M20.205 16.392c-2.469 3.289-7.741 2.179-11.122 2.338 0 0-.599.034-1.201.133 0 0 .228-.097.519-.198 2.374-.821 3.496-.986 4.939-1.727 2.71-1.388 5.408-4.413 5.957-7.555-1.032 3.022-4.17 5.623-7.027 6.679-1.955.722-5.492 1.424-5.493 1.424a5.28 5.28 0 0 1-.143-.076c-2.405-1.17-2.475-6.38 1.894-8.059 1.916-.716 3.747-.322 5.824-.801 2.205-.507 4.757-2.07 5.798-4.114.148 4.019-2.011 8.007-5.878 10.21zM19.504 0C17.69 2.897 14.952 3.836 11.32 4.005c-3.14.154-6.474.908-8.33 2.842C1.023 8.906-.044 12.34 1.294 15.98a6.305 6.305 0 0 1-.739-2.167c-.455-3.029 1.208-5.986 3.427-7.979-2.82 7.849 1.374 15.831 7.945 17.35 8.629 2.033 17.463-4.735 16.272-13.762-.491-3.642-3.285-6.389-8.695-9.422z"/></svg>
+          </div>
+          <span class="skill-name">Spring Boot</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.151zM5.77 18.695h-.927a50.854 50.854 0 0 0-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 0 0-.195 4.41H0c.055-1.966.192-3.99.354-5.838h1.096l1.388 4.26h.01l1.4-4.26h1.072c.217 1.994.38 3.9.45 5.838zm4.017-4.08a8.8 8.8 0 0 1 0 3.999h.014c.214.042.46.072.687.072.22 0 .444-.027.654-.072v.013c.226-.428.34-.917.34-1.408 0-1.022-.55-2.095-1.695-2.604zm.843-2.614c-.5-.17-1.046-.3-1.617-.3-.56 0-1.1.13-1.59.314-.41.167-.78.41-1.052.748a3.08 3.08 0 0 0-.65 1.908c0 1.32.703 2.533 1.828 3.171.513.294 1.108.44 1.7.44.568 0 1.15-.136 1.666-.41 1.102-.55 1.806-1.674 1.806-2.915 0-.793-.286-1.533-.817-2.095a3.3 3.3 0 0 0-1.274-.861zm-6.027 4.693H3.97v-1.057h.626v1.057zm-.626-2.037v-.998h.626v.998H3.977zm7.16-2.673c-.77 0-1.52.306-2.075.863a2.94 2.94 0 0 0-.862 2.088c0 1.619 1.314 2.93 2.933 2.93 1.62 0 2.935-1.314 2.935-2.937a2.93 2.93 0 0 0-2.93-2.944zm2.826 7.45h-2.547c-.43 0-.78-.352-.78-.78v-2.546c0-.43.35-.782.78-.782h2.547c.43 0 .782.352.782.782v2.547c0 .428-.353.78-.782.78zm-.86-3.453h-.625v1.906h.625v-1.906zm0-1.03h-.625v.785h.625V16.95zm-.86 0h-.625v.785h.625V16.95zm0 1.03h-.625v1.906h.625v-1.906zm5.82-.45c0 .28.055.518.165.715.108.197.31.3.603.3.073 0 .148-.012.222-.027.07-.016.147-.046.216-.08v.614a1.485 1.485 0 0 1-.263.07 1.578 1.578 0 0 1-.31.027c-.45 0-.783-.133-1.004-.404-.22-.27-.33-.625-.33-1.067 0-.443.11-.8.328-1.07.22-.267.547-.402.98-.402.087 0 .172.008.26.025.086.015.172.04.262.078v.62c-.084-.04-.167-.07-.253-.086a1.2 1.2 0 0 0-.245-.027c-.282 0-.48.097-.6.29-.117.193-.18.437-.18.724zm-.898-2.36c-.41 0-.755.136-1.04.41-.283.272-.424.627-.424 1.063 0 .44.14.8.42 1.072.283.273.633.41 1.047.41.42 0 .77-.137 1.055-.41.284-.273.426-.63.426-1.07 0-.434-.142-.79-.426-1.062-.285-.27-.64-.413-1.06-.413zm4.007 5.244h-1.076l-1.088-2.188-.285.438v1.75H20v-5.838h.933v3.148h.01l1.328-1.9h1.04l-1.38 1.882 1.468 2.708zm-.915-3.09c-.156-.18-.37-.27-.64-.27-.165 0-.328.04-.484.12-.155.08-.305.197-.45.356v-1.11c.21-.078.4-.117.577-.117.43 0 .783.16 1.06.476.277.317.413.714.413 1.19 0 .476-.14.862-.416 1.163-.278.3-.63.45-1.057.45a2.2 2.2 0 0 1-.577-.07v-.626c.145.066.295.1.446.1.265 0 .478-.093.636-.277.158-.183.237-.43.237-.742 0-.316-.082-.565-.25-.744z"/></svg>
+          </div>
+          <span class="skill-name">SQL</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M11.998 0C5.374 0 0 5.374 0 12s5.374 12 11.998 12C18.626 24 24 18.626 24 12S18.626 0 11.998 0zm4.843 17.906a.75.75 0 0 1-1.03.248l-3.565-2.18a.75.75 0 0 1-.355-.645V6.75a.75.75 0 0 1 1.5 0v8.145l3.202 1.957a.75.75 0 0 1 .248 1.054z"/></svg>
+          </div>
+          <span class="skill-name">Git & GitHub</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M1.5 8.5h21v9a3 3 0 0 1-3 3h-15a3 3 0 0 1-3-3v-9zm0-2a3 3 0 0 1 3-3h15a3 3 0 0 1 3 3v1h-21v-1zm7.75 5.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1 0-1.5z"/></svg>
+          </div>
+          <span class="skill-name">Responsive UI</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24"><path d="M23.433 11.837L22.06 6.168a1.457 1.457 0 0 0-1.42-1.117H3.36A1.457 1.457 0 0 0 1.94 6.168L.567 11.837a1.429 1.429 0 0 0 .347 1.314c.356.378.859.6 1.379.6H4.27l-.795 7.56a.36.36 0 0 0 .365.396h2.46a.36.36 0 0 0 .354-.296L7.58 17h8.84l.925 4.41a.36.36 0 0 0 .355.297h2.459a.36.36 0 0 0 .365-.395l-.794-7.561h1.976c.52 0 1.023-.222 1.379-.6a1.428 1.428 0 0 0 .348-1.314zM8 14l.5-3h7l.5 3H8z"/></svg>
+          </div>
+          <span class="skill-name">REST APIs</span>
+          <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ PROJECTS ══════════════════════════════ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Featured Work</div>
+        <h2 class="section-heading">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1: AffordaHome -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <div class="project-img-bg project-img-bg--1">
+              <div class="project-img-content">
+                <div class="mock-browser">
+                  <div class="mock-bar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="mock-screen">
+                    <div class="mock-sidebar"></div>
+                    <div class="mock-main">
+                      <div class="mock-card"></div>
+                      <div class="mock-card"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-number">01</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">AffordaHome</h3>
+            <p class="project-desc">
+              An affordable housing rental platform designed to connect tenants
+              with budget-friendly options in Kigali. Built with a responsive
+              JavaScript frontend and a robust Java/Spring Boot backend for
+              secure data handling.
+            </p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">SQL</span>
+              <span class="tag">REST API</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn--primary btn--sm">View Demo →</a>
+              <a href="#" class="btn btn--ghost btn--sm">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Java OOP Multi-System -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <div class="project-img-bg project-img-bg--2">
+              <div class="project-img-content">
+                <div class="mock-terminal">
+                  <div class="terminal-bar">
+                    <span></span><span></span><span></span>
+                    <span class="terminal-title">java -jar system.jar</span>
+                  </div>
+                  <div class="terminal-body">
+                    <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">Loading modules...</span></div>
+                    <div class="t-line"><span class="t-ok">✓</span> Construction Manager</div>
+                    <div class="t-line"><span class="t-ok">✓</span> Hotel Services</div>
+                    <div class="t-line"><span class="t-ok">✓</span> Traffic Fines</div>
+                    <div class="t-line t-blink"><span class="t-prompt">_</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-number">02</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Java OOP Multi-System</h3>
+            <p class="project-desc">
+              A comprehensive terminal-based application demonstrating advanced
+              Object-Oriented Programming concepts in Java. Features modular
+              architecture across construction, hotel, and traffic fine
+              management domains.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">OOP</span>
+              <span class="tag">Architecture</span>
+              <span class="tag">Inheritance</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn--primary btn--sm">View Code →</a>
+              <a href="#" class="btn btn--ghost btn--sm">Documentation</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ CONTACT ═══════════════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-card glass-card reveal">
+        <div class="contact-left">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-heading">Let's Build<br />Something Great</h2>
+          <p>
+            Whether you have a project in mind, a question about my work, or just want
+            to connect — my inbox is open.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:amani@example.com" class="contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              amani@example.com
+            </a>
+            <a href="https://github.com" target="_blank" class="contact-link">
+              <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              github.com/amanishema
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              Send Message →
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <span class="footer-logo">Amani Shema</span>
+          <p class="footer-copy">© 2024 Amani Shema. Built with Technical Intentionality.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://fiverr.com" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M23.004 15.588a.995.995 0 1 0 .002-1.99.995.995 0 0 0-.002 1.99zm-.996-3.705h-1.85c-.828 0-1.269.596-1.269 1.547v4.007h-1.895V9.78h-2.084v7.657h-1.671V9.78h-1.035v-1.93h1.035V7.57c0-1.682 1.003-2.469 2.649-2.469.627 0 1.256.056 1.88.127v1.733h-1.225c-.73 0-.897.34-.897.874v1.015h2.173l-.292 1.934h-1.881v7.658h3.855c.727 0 1.309-.582 1.309-1.309v-2.7c0-.547.384-.95.923-.95h1.277V11.883h-.002zm-11.474 5.523c0 .743-.422 1.133-1.087 1.133-.613 0-1.034-.408-1.034-1.133V11.88H6.52v5.744c0 1.672.96 2.59 2.428 2.59 1.172 0 1.992-.592 2.272-1.46l.097 1.253h1.855V11.88h-2.638v5.526zM6.483 7.55a1.315 1.315 0 0 0-1.311 1.317c0 .727.588 1.315 1.311 1.315a1.315 1.315 0 0 0 0-2.632z"/></svg>
+            Fiverr
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
