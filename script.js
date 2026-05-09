@@ -111,9 +111,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const btn = form.querySelector('button[type="submit"]');
       const original = btn.textContent;
-      const name = form.querySelector('#name').value.trim();
-      const email = form.querySelector('#email').value.trim();
-      const message = form.querySelector('#message').value.trim();
+
+      const name    = document.getElementById('name').value.trim();
+      const email   = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
 
       if (!name || !email || !message) {
         alert('Please complete all fields before sending.');
@@ -124,35 +125,45 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.disabled = true;
       btn.style.opacity = '0.7';
 
+      const formData = {
+        access_key: '358bcea8-2baa-40d8-b13e-b3c886870dc4',
+        name,
+        email,
+        message,
+        subject: 'New message from your portfolio'
+      };
+
       try {
-        const response = await fetch('/api/send-email', {
+        const res = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name, email, message }),
+          body: JSON.stringify(formData)
         });
 
-        if (!response.ok) {
-          throw new Error('Send failed');
-        }
+        const data = await res.json();
 
-        btn.textContent = '✓ Message Sent!';
-        btn.style.background = '#22c55e';
+        if (data.success) {
+          btn.textContent = '✓ Message Sent!';
+          btn.style.background = '#22c55e';
+          btn.style.opacity = '1';
+          form.reset();
+        } else {
+          btn.textContent = '✗ Failed. Try again.';
+          btn.style.background = '#ef4444';
+          btn.style.opacity = '1';
+        }
+      } catch (err) {
+        btn.textContent = '✗ Network error';
+        btn.style.background = '#ef4444';
         btn.style.opacity = '1';
-        form.reset();
-      } catch (error) {
-        console.error('Contact form error:', error);
-        btn.textContent = 'Send Message →';
-        btn.disabled = false;
-        btn.style.opacity = '1';
-        alert('Sorry, your message could not be sent. Please try again later.');
-        return;
       }
 
       setTimeout(() => {
         btn.textContent = original;
         btn.disabled = false;
         btn.style.background = '';
-      }, 3000);
+        btn.style.opacity = '1';
+      }, 3500);
     });
   }
 
