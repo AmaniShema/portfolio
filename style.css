@@ -672,7 +672,18 @@ a { text-decoration: none; color: inherit; }
 
 .project-img-content { width: 100%; max-width: 320px; }
 
-/* Mock browser for AffordaHome */
+.project-screenshot {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.45);
+}
+
+/* Mock browser */
 .mock-browser {
   background: #111c2e;
   border-radius: 8px;
