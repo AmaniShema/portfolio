@@ -507,7 +507,7 @@ a { text-decoration: none; color: inherit; }
   display: block;
 }
 
-.avatar-badge {
+/* .avatar-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -517,13 +517,13 @@ a { text-decoration: none; color: inherit; }
   padding: 0.3rem 0.85rem;
   font-size: 0.75rem;
   color: #4ade80;
-}
-.status-dot {
+} */
+/* .status-dot {
   width: 6px; height: 6px;
   border-radius: 50%;
   background: #4ade80;
   animation: pulse-green 2s ease infinite;
-}
+} */
 @keyframes pulse-green {
   0%, 100% { box-shadow: 0 0 0 0 rgba(74,222,128,0.5); }
   50% { box-shadow: 0 0 0 5px rgba(74,222,128,0); }
